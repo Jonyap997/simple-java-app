@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('Printenv') {
             steps {
-                echo 'Hi, I'm printing some environment variables'
+                echo ('Hi, I'm printing some environment variables')
             }
         }
         stage('Build') {

@@ -6,6 +6,11 @@ pipeline {
     }
     
     stages {
+        stage('Printenv') {
+            steps {
+                echo 'Hi, I'm printing some environment variables'
+            }
+        }
         stage('Build') {
             steps {
                 sh 'mvn clean package'
